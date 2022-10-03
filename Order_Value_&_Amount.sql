@@ -1,5 +1,5 @@
-Select sum(tr.saleprice) totalvalue,
-       count(Distinct s.orderid) ordercount
+Select sum(tr.saleprice)         [totalvalue],
+       count(Distinct s.orderid) [ordercount]
 
 from ThingRequest tr
 join Shipment s on s.id=tr.ShipmentId
